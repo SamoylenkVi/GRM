@@ -1,14 +1,15 @@
-body {
-  background: url(../img/cover.jpeg);
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
 }
 
-@media (max-width: 768px) {
-  span {
-    font-size: 16px;
-  }
-}
-@media (max-width: 768px) {
-  div {
-    font-size: 16px;
-  }
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
 }

@@ -3,21 +3,108 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Главная</title>
+    <title>Grossmeister Capital AG – independent asset management company</title>
+    <meta name="description" content="We open accounts in various Swiss banks, determine the best investment strategies and manage the assets.">
+
+    <link rel="icon" href="https://grmcap.com/assets/template/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://grmcap.com/assets/template/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://grmcap.com/assets/template/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://grmcap.com/assets/template/favicon-16x16.png">
+    <link rel="manifest" href="https://grmcap.com/assets/template/site.webmanifest">
+    <link rel="mask-icon" href="https://grmcap.com/assets/template/safari-pinned-tab.svg" color="#d82935">
+    <meta name="apple-mobile-web-app-title" content="#GRMCAP">
+    <meta name="application-name" content="#GRMCAP">
+    <meta name="msapplication-TileColor" content="#d82935">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="Grossmeister Capital AG">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GRMCAP">
+    <meta name="twitter:url" property="og:url" content="http://grmcap.com/">
+    <meta name="twitter:description" property="og:description" content="We open accounts in various Swiss banks, determine the best investment strategies and manage the assets.">
+    <meta name="twitter:image" property="og:image" content="http://grmcap.com/img/vk.jpg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js?_v=20220830131850"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0/build/global/luxon.min.js?_v=20220830131850"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0/dist/chartjs-adapter-luxon.min.js?_v=20220830131850"></script>
+    <link href="/css/grmcap.css?ver=1.2&_v=20220830131850" rel="stylesheet">
+    <link href="/css/style.min.css?_v=20220830131850" rel="stylesheet">
 </head>
 <body>
-    <header>
-    <nav></nav>
-</header>
+    <header class="main-header">
+    <div class="container">
+        <button id="headerToggle" class="header-toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Меню" hidden></button>
+        <div class="header-menu" id="menu">
+            <span class="header-hashtag">GRMCAP</span>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a aria-current="page">Inflation hedging</a></li>
+                    <li class="nav-item"><a href="./">Open Account</a></li>
+                    <li class="nav-item"><a href="products/">Products</a></li>
+                    <li class="header-phone"><a href="tel:41445527599">+41 44 552 7599</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="js-scroll">Contacts</a></li>
+                    <li class="nav-item header-lang">
+                        <a aria-current="true" href="index.html" aria-label="English" hreflang="en">En</a>
+                        <a href="de/index.html" aria-label="Deutsch" hreflang="de">De</a>
+                        <a href="ru/index.html" aria-label="Русский язык" hreflang="ru">Ru</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>   
     <main>
-        <img src="img/cover.jpeg">
+        <div class="main-about container">
+            <div class="about-text">
+                <h1>Grossmeister Capital AG is an independent wealth management company</h1>
+                <p>We create and support investment strategies to protect investor’s portfolios from inflation.</p>
+                <p>By the end of 2021, inflation has started to attract the first attention. At the same time we launched four strategies to protect investor portfolios.</p>
+                <p>Below you can find out why inflation is with us for a long time, study each strategy separately and see the latest charts of our inflation protection solutions.</p>
+                <blockquote class="quote">The inflation is to stay for a long time</blockquote>
+                <ul class="about-nav">
+                    <li><a href="#reasons">Learn why inflation is a problem</a></li>
+                </ul>
+            </div>
+            <aside class="about-aside">
+                <div class="about-info">
+                    <p>We have been working in the wealth management industry since 2015. Our team is experienced in wealth management during both times of economic growth and global recession.</p>
+                    <p>In 2018, as part of a business reorganization, Grossmeister Capital AG was created. The Head Office is located in the canton of Zurich, Switzerland.</p>
+                    <b>Our company is a member of the Association of Financial Services Standards (VQF) and follows the best European practices and standards.</b>
+                    <a class="about-logo" href="https://www.vqf.ch/" target="_blank" rel="noopener noreferrer"><img width="128" height="65" src="https://grmcap.com/assets/template/img/vqf.svg" alt="VQF website"></a>
+                </div>
+            </aside>
+        </div>
+        <section class="section main-reasons container" id="reasons">
+            <h2 class="section-title">Why inflation has become a problem</h2>
+            <b>Key Takeaways</b>
+            <ul class="list--tick">
+                <li>Commodity prices will only go up. Inflation is real and continues to deteriorate wealth</li>
+                <li>Inflation effect can be hedged by inflation protection strategies</li>
+                <li>Strategies are live and show significant evidence to work</li>
+                <li>5% allocation covers the downside of a portfolio of up to 25% p.a. due inflation and markets</li>
+                <li>We offer full support of entering and maintaining the position</li>
+            </ul>
+            <div class="reasons-text">
+                <div>
+                    <p>Over the past two years we have seen events fueling inflation: COVID-19, money printing, geopolitical events. We expect high inflation levels to continue over the coming months and years.</p>
+                    <p>Figure 1 shows the long-term commodities cycle over decades. In 2019 commodity prices have stabilized after a 10 years price depreciation (see the orange line).</p>
+                    <p>During the pandemic period, in 2020-2022, and in present times, we can observe the continuation of disruptions of supply chains and imbalances in supply and demand.</p>
+                    <p>We believe these circumstances are the start point for the reversal of the commodity price trend. We expect an appreciation of commodity prices for the periods ahead of us (see dotted blue line in graph).</p>
+                </div>
+                <figure class="gallery-item">
+                    <picture><source srcset="https://via.placeholder.com/325x167" type="image/webp"><img src="https://via.placeholder.com/325x167" alt="" width="325" height="167"></picture>
+                    <figcaption>Dynamics of commodity index prices</figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
     <footer>
     
 </footer>
-    <script src="js/app.min.js"></script>
+    <script src="js/browser.js?_v=20220830131850"></script>
 </body>
 </html>
