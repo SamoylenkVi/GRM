@@ -5,7 +5,6 @@
   font-display: swap;
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
 }
-
 @font-face {
   font-family: "Montserrat-Regular";
   font-style: normal;
