@@ -5,10 +5,123 @@
   font-display: swap;
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
 }
+
 @font-face {
   font-family: "Montserrat-Regular";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+.gallery-picture {
+  cursor: pointer;
+}
+
+.gallery-pop-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translate(0, -50%);
+  height: 100vh;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 700ms;
+}
+
+.gallery-pop-up-opend {
+  z-index: 3;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.gallery-pop-up-opend .gallery-overlay {
+  background-color: #000000;
+  opacity: 40%;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+}
+
+.gallery-pop-up-container {
+  position: relative;
+}
+
+.gallery-button-close {
+  border: none;
+  position: absolute;
+  top: -50px;
+  right: -17px;
+  z-index: 4;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  opacity: 0.7;
+  transition: transform 200ms, opacity 200ms;
+  cursor: pointer;
+}
+
+.gallery-button-close::before,
+.gallery-button-close::after {
+  position: absolute;
+  border-radius: 100% 100% 100% 100%;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+}
+
+.gallery-button-close::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.gallery-button-close::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.gallery-button-close:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  transition: transform 200ms, opacity 200ms;
+}
+
+.gallery-pop-up-picture {
+  opacity: 0;
+}
+
+.gallery-pop-up-opend .gallery-pop-up-picture {
+  position: relative;
+  z-index: 4;
+  max-width: 1024px;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: opacity 100ms;
+}
+
+.inflation-factors {
+  padding-top: 60px;
+}
+
+.inflation-factors-list li:nth-child(1)::before {
+  background-image: url(../img/coins.svg);
+}
+
+.inflation-factors-list li:nth-child(2)::before {
+  background-image: url(../img/percent.svg);
+}
+
+.inflation-factors-list li:nth-child(3)::before {
+  background-image: url(../img/globe.svg);
+}
+
+.inflation-factors-list li:nth-child(4)::before {
+  background-image: url(../img/scales.svg);
 }
