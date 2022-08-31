@@ -114,7 +114,7 @@
 }
 
 .inflation-principles-bill {
-  background-image: url(/img/bill.jpg);
+  background-image: url(../img/bill.jpg);
   background-size: 100% auto;
   flex-basis: 100%;
   background-repeat: no-repeat;
@@ -169,7 +169,7 @@
   }
 
   .inflation-principles-lake {
-    background-image: url(/img/lake.jpg);
+    background-image: url(../img/lake.jpg);
     flex-basis: 60%;
     position: relative;
     background-size: cover;
