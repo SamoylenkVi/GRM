@@ -1,16 +1,29 @@
-.inflation-factors {
-    padding-top: 60px;
-}
+@media (min-width: 68em) {
+    .inflation-factors {
+        padding-top: 60px;
+    }
 
-.inflation-factors-list li:nth-child(1)::before {
-    background-image: url(../img/coins.svg);
-}
-.inflation-factors-list li:nth-child(2)::before {
-    background-image: url(../img/percent.svg);
-}
-.inflation-factors-list li:nth-child(3)::before {
-    background-image: url(../img/globe.svg);
-}
-.inflation-factors-list li:nth-child(4)::before {
-    background-image: url(../img/scales.svg);
+    .inflation-factors-list li:nth-child(3) .offers-text,
+    .inflation-factors-list li:nth-child(4) .offers-text {
+        border-bottom: none;
+    }
+
+    .inflation-factors-list li:nth-child(1)::before {
+        background-image: url(../img/coins.svg);
+    }
+    .inflation-factors-list li:nth-child(2)::before {
+        background-image: url(../img/percent.svg);
+    }
+    .inflation-factors-list li:nth-child(3)::before {
+        background-image: url(../img/globe.svg);
+    }
+    .inflation-factors-list li:nth-child(4)::before {
+        background-image: url(../img/scales.svg);
+    }
+
+    .inflation-factors-list li::before {
+        position: absolute;
+        top: -9px;
+        left: -2px;
+    }   
 }

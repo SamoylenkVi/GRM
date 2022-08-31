@@ -1,0 +1,69 @@
+.inflation-principles-container {
+    margin-left: 20px;
+    margin-right: 0;
+    flex-direction: column;
+    padding-top: 73px;
+}
+
+.inflation-principles-bill {
+    background-image: url(/img/bill.jpg);
+    background-size: 100% auto;
+    flex-basis: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 39vh;
+}
+
+@media (min-width: 68em) {
+    .inflation-principles-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 86%;
+        margin-left: auto;
+        padding: 0;
+        margin-right: 0;
+        max-width: none;
+        min-height: 324px;
+        position: relative;
+    }
+
+    .inflation-principles-lake {
+        background-image: url(/img/lake.jpg);
+        flex-basis: 60%;
+        position: relative;
+        background-size: cover;
+    }
+
+    .inflation-principles-container  p {
+        position: absolute;
+        bottom: 0;
+        background-color: #ffffff;
+        margin: 0;
+        width: 57%;
+        left: 50%;
+        transform: translate(-85%, 0);
+        padding: 1em 0.9em 2.1em;
+        box-sizing: border-box;
+        font-size: 1.1em;
+    }
+
+    .inflation-principles-bill {
+        background-size: 100% auto;
+        flex-basis: 37%;
+        margin-top: 59px;
+        height: auto;
+    }
+
+    .inflation-principles-bill::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 100%;
+        width: 100%;
+        height: 40px;
+        border-top: 17px solid #c23432;
+        border-left: 17px solid #c23432;
+    }
+}
