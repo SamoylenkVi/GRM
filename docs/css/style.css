@@ -109,18 +109,43 @@
 .inflation-principles-container {
   margin-left: 20px;
   margin-right: 0;
-  flex-direction: column;
-  padding-top: 73px;
+  padding-top: 4.6em;
+  padding-bottom: 1em;
+  position: relative;
 }
 
 .inflation-principles-bill {
   background-image: url(../img/bill.jpg);
   background-size: 100% auto;
-  flex-basis: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
-  height: 39vh;
+  height: 50vw;
+  max-height: 18rem;
+}
+
+.inflation-principles-bill::after {
+  content: "";
+  position: absolute;
+  top: 4.6em;
+  bottom: 0;
+  left: -20px;
+  right: 57%;
+  border-top: 1rem solid #EAEAEA;
+  border-right: 1rem solid #EAEAEA;
+  border-bottom: 1rem solid #EAEAEA;
+  z-index: -1;
+}
+
+.inflation-principles-bill::before {
+  content: "";
+  position: absolute;
+  top: 2.2em;
+  bottom: 50%;
+  left: 53%;
+  right: 0;
+  border-top: 1rem solid #D31E28;
+  border-left: 1rem solid #D31E28;
+  z-index: -1;
 }
 
 @media (min-width: 68em) {
@@ -161,11 +186,8 @@
     justify-content: space-between;
     width: 86%;
     margin-left: auto;
-    padding: 0;
-    margin-right: 0;
     max-width: none;
     min-height: 324px;
-    position: relative;
   }
 
   .inflation-principles-lake {
@@ -175,34 +197,43 @@
     background-size: cover;
   }
 
+  .inflation-principles-lake::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 65%;
+    background-color: #EAEAEA;
+  }
+
   .inflation-principles-container p {
     position: absolute;
-    bottom: 0;
+    bottom: 1.6em;
     background-color: #ffffff;
     margin: 0;
     width: 57%;
     left: 50%;
     transform: translate(-85%, 0);
-    padding: 1em 0.9em 2.1em;
+    padding: 1em 0.9em 1.2em;
     box-sizing: border-box;
     font-size: 1.1em;
   }
 
   .inflation-principles-bill {
-    background-size: 100% auto;
     flex-basis: 37%;
     margin-top: 59px;
+    background-size: cover;
     height: auto;
   }
 
   .inflation-principles-bill::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 100%;
-    width: 100%;
-    height: 40px;
-    border-top: 17px solid #c23432;
-    border-left: 17px solid #c23432;
+    left: 63%;
+    right: 0;
+    top: 4.6em;
+  }
+
+  .inflation-principles-bill::after {
+    content: none;
   }
 }
