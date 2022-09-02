@@ -1,0 +1,58 @@
+.quote-container {
+    position: relative;
+    padding-bottom: 14em;
+
+    .quote {
+        border-bottom: none;
+        margin: 5.08em 0 0;
+        padding-top: 3.3em;
+    }
+
+    .quote::before {
+        padding: 3.2em 3.69em;
+        background-size: cover;
+    }
+}
+
+.quote-container::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/mountains.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    bottom: 0;
+    height: 14em;
+    left: 1.25rem;
+    right: 1.25rem;
+    z-index: 1;
+}
+@media (min-width: 68em) {
+    .quote-container {
+        padding-bottom: 0;
+    
+        .quote {
+            border-bottom: 2px solid #D82935;
+            border-right: none;
+            margin: 0 0 0;
+            padding: 1.6em 1.5em 2.2em 5.9em;
+            width: 74%;
+            box-sizing: border-box;
+            text-align: start;
+            font-size: 1.5em;
+        }
+    
+        .quote::before {
+            padding: 2.6em 3.1em;
+            transform: translate(-1.4em, -50%);
+            background-size: contain;
+        }
+
+        &::before {
+            height: auto;
+            background-size: 100% 100%;
+            top: 0;
+            left: 73%;
+            right: 1em;
+        }
+    }
+}

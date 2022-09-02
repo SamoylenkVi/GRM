@@ -89,6 +89,10 @@
     .strategies-inflation {
         padding-top: 2.4em;
 
+        .products-list {
+            margin: 0 0 2.5em;
+        }
+
         .products-list > li {
             flex-basis: 31.8em;
             margin-right: 0;
