@@ -1,0 +1,77 @@
+.inflation-graphics {
+    padding-top: 4em;
+
+    h2 {
+        padding-right: 2em;
+    }
+
+    p {
+        margin-top: 1.2em;
+    }
+
+    a {
+        color: inherit;
+        border-bottom: 1px solid #D82935;
+        text-decoration: none;
+        transition: color 300ms;
+
+        &:hover,
+        &:focus {
+            color: #D82935;
+            transition: color 300ms;
+        }
+    }
+}
+
+.graphics-date{
+    color: rgba(34, 34, 34, 0.65);
+}
+
+.inflation-graphics-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        border: 1px solid #EAEAEA;
+        box-shadow: 0px 0px 25px #eaeaea;
+        border-radius: 12px;
+        padding: 1em 1em 0.5em;
+        margin-bottom: 1em;
+
+        p {
+            margin: 0;
+            font-size: 0.9em;
+            padding-top: 0.2em;
+        }
+    }
+}
+
+.inflation-graphic {
+    width: 100%;
+}
+
+@media (min-width: 68em) {
+    .inflation-graphics {
+        p {
+            max-width: 40em;
+        }
+    }
+
+    .graphics-date {
+        font-size: 0.9em;
+        margin-top: 1.5em;
+    }
+
+    .inflation-graphics-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.9em;
+        row-gap: 0.4em;
+        margin-top: 1.2em;
+
+        li {
+            flex-basis: 46%;
+            padding-bottom: 1.2em;
+        }
+    }
+}
