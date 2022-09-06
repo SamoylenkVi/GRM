@@ -1,0 +1,80 @@
+.inflation-contacts-wrapper {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 0px 25px #eaeaea;
+    border-radius: 12px;
+    background-image: url(../img/chess-contacts.png);
+    background-position: center 2em;
+    background-size: 87% auto;
+    background-repeat: no-repeat;
+    margin-top: 5em;
+    padding: 56% 1.4em 1em;
+    margin-bottom: 5.7em;
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-top: 0.6em;
+        margin-bottom: 1.3em;
+    }
+
+    .model-contact {
+        flex-direction: column;
+    }
+
+    .model-tel a::before,
+    .model-tel a::after,
+    .model-mail a::before,
+    .model-mail a::after {
+        content: none;
+    }
+
+    .model-contact a {
+        min-height: 2.6em;
+        font-size: 98%;
+        justify-content: center;
+        margin-bottom: 0.9em;
+    }
+
+    .model-tel a {
+        background-color: #D31E28;
+        color: #FFFFFF;
+        border-color: transparent;
+    }
+
+    .model-mail a:hover {
+        color: white;
+    }
+}
+
+@media (min-width: 68em) {
+    .inflation-contacts-wrapper {
+        background-position: 92%;
+        background-size: 42%;
+        margin-top: 4em;
+        padding: 1.9em 33em 2em 2.4em;
+        margin-bottom: 5.7em;
+
+        p {
+            margin-top: 1.2em;
+        }
+
+        .model-contact {
+            flex-direction: row;
+            margin-top: 1em;
+
+            a {
+                min-height: 3.7em;
+            }
+        }
+
+        .model-tel a:hover {
+            background-color: transparent;
+            color: #D31E28;
+            border-color: #D31E28;
+        }
+        
+    }
+}

@@ -333,6 +333,13 @@ li {
 .about-nav a {
 	text-decoration-color: #D82935;
 	color: inherit;
+	transition: color 300ms;
+}
+
+.about-nav a:hover,
+.about-nav a:focus {
+	color:  #D82935;
+	transition: color 300ms;
 }
 
 .about-aside::before {

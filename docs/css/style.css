@@ -55,11 +55,11 @@
 .gallery-button-close {
   border: none;
   position: absolute;
-  top: -50px;
-  right: -17px;
+  top: -32px;
+  right: 0px;
   z-index: 4;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-color: transparent;
   opacity: 0.7;
   transition: transform 200ms, opacity 200ms;
@@ -71,8 +71,8 @@
   position: absolute;
   border-radius: 100% 100% 100% 100%;
   content: "";
-  width: 30px;
-  height: 3px;
+  width: 25px;
+  height: 2px;
   background-color: #ffffff;
   top: 50%;
   left: 50%;
@@ -326,13 +326,77 @@
   width: 100%;
 }
 
+.inflation-contacts-wrapper {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 0px 25px #eaeaea;
+  border-radius: 12px;
+  background-image: url(../img/chess-contacts.png);
+  background-position: center 2em;
+  background-size: 87% auto;
+  background-repeat: no-repeat;
+  margin-top: 5em;
+  padding: 56% 1.4em 1em;
+  margin-bottom: 5.7em;
+}
+
+.inflation-contacts-wrapper h2 {
+  margin-bottom: 0;
+}
+
+.inflation-contacts-wrapper p {
+  margin-top: 0.6em;
+  margin-bottom: 1.3em;
+}
+
+.inflation-contacts-wrapper .model-contact {
+  flex-direction: column;
+}
+
+.inflation-contacts-wrapper .model-tel a::before,
+.inflation-contacts-wrapper .model-tel a::after,
+.inflation-contacts-wrapper .model-mail a::before,
+.inflation-contacts-wrapper .model-mail a::after {
+  content: none;
+}
+
+.inflation-contacts-wrapper .model-contact a {
+  min-height: 2.6em;
+  font-size: 98%;
+  justify-content: center;
+  margin-bottom: 0.9em;
+}
+
+.inflation-contacts-wrapper .model-tel a {
+  background-color: #D31E28;
+  color: #FFFFFF;
+  border-color: transparent;
+}
+
+.inflation-contacts-wrapper .model-mail a:hover {
+  color: white;
+}
+
 @media (min-width: 68em) {
+  .gallery-button-close {
+    top: -50px;
+    right: -17px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .gallery-button-close::before,
+  .gallery-button-close::after {
+    width: 30px;
+    height: 3px;
+  }
+
   .inflation-factors {
     padding-top: 60px;
   }
 
-  .inflation-factors-list li:nth-child(3) .offers-text,
-  .inflation-factors-list li:nth-child(4) .offers-text {
+  .inflation-factors .inflation-factors-list li:nth-child(3) p,
+  .inflation-factors .inflation-factors-list li:nth-child(4) p {
     border-bottom: none;
   }
 
@@ -500,5 +564,32 @@
   .inflation-graphics-list li {
     flex-basis: 46%;
     padding-bottom: 1.2em;
+  }
+
+  .inflation-contacts-wrapper {
+    background-position: 92%;
+    background-size: 42%;
+    margin-top: 4em;
+    padding: 1.9em 33em 2em 2.4em;
+    margin-bottom: 5.7em;
+  }
+
+  .inflation-contacts-wrapper p {
+    margin-top: 1.2em;
+  }
+
+  .inflation-contacts-wrapper .model-contact {
+    flex-direction: row;
+    margin-top: 1em;
+  }
+
+  .inflation-contacts-wrapper .model-contact a {
+    min-height: 3.7em;
+  }
+
+  .inflation-contacts-wrapper .model-tel a:hover {
+    background-color: transparent;
+    color: #D31E28;
+    border-color: #D31E28;
   }
 }
