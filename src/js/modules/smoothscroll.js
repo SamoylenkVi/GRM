@@ -11,7 +11,7 @@ export default function() {
           const from = window.pageYOffset
           const to = target.getBoundingClientRect().top + window.pageYOffset
           
-          scrollTo(from, to, to/1.7)
+          scrollTo(from, to, to/1.9)
         }
       })
       
