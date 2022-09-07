@@ -404,10 +404,10 @@ li {
 	margin-top: 1.875em;
 }
 .reasons-text > *:first-child {
-	flex-basis: 38em;
+	flex-basis: 59%;
 }
 .reasons-text > *:last-child {
-	flex-basis: 26.5em;
+	flex-basis: 35%;
 }
 .reasons-text p:first-child {
 	margin-top: 0;

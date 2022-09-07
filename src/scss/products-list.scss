@@ -91,10 +91,13 @@
 
         .products-list {
             margin: 0 0 2.5em;
+            justify-content: flex-start;
+            gap: 1em;
+            row-gap: 0;
         }
 
         .products-list > li {
-            flex-basis: 31.8em;
+            flex-basis: 49%;
             margin-right: 0;
             margin-bottom: 1.2em;
         }

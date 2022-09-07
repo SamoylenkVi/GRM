@@ -497,10 +497,13 @@
 
   .strategies-inflation .products-list {
     margin: 0 0 2.5em;
+    justify-content: flex-start;
+    gap: 1em;
+    row-gap: 0;
   }
 
   .strategies-inflation .products-list > li {
-    flex-basis: 31.8em;
+    flex-basis: 49%;
     margin-right: 0;
     margin-bottom: 1.2em;
   }
@@ -567,8 +570,8 @@
   }
 
   .inflation-contacts-wrapper {
-    background-position: 92%;
-    background-size: 42%;
+    background-position: 85%;
+    background-size: 22em;
     margin-top: 4em;
     padding: 1.9em 33em 2em 2.4em;
     margin-bottom: 5.7em;
