@@ -1,7 +1,8 @@
 'use strict';
 
 export default function() {
-  const links = document.querySelectorAll(".about-nav a");
+  const links = document.querySelectorAll('[data-scroll]');
+  console.log(links)
   if (links) {
       links.forEach(link => {
         link.onclick = (e) => {

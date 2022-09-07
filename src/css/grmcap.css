@@ -404,13 +404,22 @@ li {
 	margin-top: 1.875em;
 }
 .reasons-text > *:first-child {
-	flex-basis: 59%;
+	flex-basis: 38em;
 }
 .reasons-text > *:last-child {
-	flex-basis: 35%;
+	flex-basis: 26.5em;
 }
 .reasons-text p:first-child {
 	margin-top: 0;
+}
+
+@media (min-width: 68em)  {
+	.reasons-text > *:first-child {
+		flex-basis: 59%;
+	}
+	.reasons-text > *:last-child {
+		flex-basis: 35%;
+	}
 }
 
 .list--tick {
