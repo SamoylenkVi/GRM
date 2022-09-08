@@ -584,15 +584,14 @@
   .inflation-contacts-wrapper p a {
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: color 300ms, border 300ms;
+    border-bottom: 1px solid #D31E28;
+    transition: color 300ms;
   }
 
   .inflation-contacts-wrapper p a:hover,
   .inflation-contacts-wrapper p a:focus {
     color: #D31E28;
-    border-color: #D31E28;
-    transition: color 300ms, border 300ms;
+    transition: color 300ms;
   }
 
   .inflation-contacts-wrapper .model-contact {

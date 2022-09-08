@@ -2,7 +2,7 @@
 
 export default function() {
   const links = document.querySelectorAll('[data-scroll]');
-  console.log(links)
+  const scrollTime = 1.9;
   if (links) {
       links.forEach(link => {
         link.onclick = (e) => {
@@ -12,7 +12,7 @@ export default function() {
           const from = window.pageYOffset
           const to = target.getBoundingClientRect().top + window.pageYOffset
           
-          scrollTo(from, to, to/1.9)
+          scrollTo(from, to, 600)
         }
       })
       
