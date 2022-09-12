@@ -18,6 +18,13 @@
     p {
         margin-top: 0.6em;
         margin-bottom: 1.3em;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px solid #D31E28;
+            transition: color 300ms;
+        }
     }
 
     .model-contact {
@@ -61,11 +68,6 @@
             margin-top: 1.2em;
 
             a {
-                color: inherit;
-                text-decoration: none;
-                border-bottom: 1px solid #D31E28;
-                transition: color 300ms;
-
                 &:hover,
                 &:focus {
                     color: #D31E28;

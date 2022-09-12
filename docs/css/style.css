@@ -349,6 +349,13 @@
   margin-bottom: 1.3em;
 }
 
+.inflation-contacts-wrapper p a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #D31E28;
+  transition: color 300ms;
+}
+
 .inflation-contacts-wrapper .model-contact {
   flex-direction: column;
 }
@@ -579,13 +586,6 @@
 
   .inflation-contacts-wrapper p {
     margin-top: 1.2em;
-  }
-
-  .inflation-contacts-wrapper p a {
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid #D31E28;
-    transition: color 300ms;
   }
 
   .inflation-contacts-wrapper p a:hover,
